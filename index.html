@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+        <!--A página utiliza valores constantes obtidos na data especificada no parágrafo abaixo para fazer conversões-->
+        <p>Cotações obtidas em: <span id="date">30/07/2024</span></p>
+    </header>
+    
+    <main>
+        <div class="conversor">
+            <label for="quantia">Valor:</label>
+            <!--Cria uma "caixinha" em que o usuário digita um número para ser convertido-->
+            <input type="number" id="quantia" placeholder="Digite o valor">
+            
+            <label for="moeda-origem">De:</label>
+            <!--Cria uma "caixinha" de seleção para escolher moeda que deseja converter-->
+            <select id="moeda-origem">
+                <option value="BRL">Real (BRL)</option>
+                <option value="USD">Dólar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene (JPY)</option>
+            </select>
+            
+            <label for="moeda-destino">Para:</label>
+            <!--Cria uma "caixinha" de seleção para escolher moeda para uqal deseja converter-->
+            <select id="moeda-destino">
+                <option value="BRL">Real (BRL)</option>
+                <option value="USD">Dólar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene (JPY)</option>
+            </select>
+            
+            
+            <div class="resultado">
+                <!--Exibe resultado da conversão-->
+                <p>Resultado: <span id="resultado">0</span></p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Conversor de Moedas</p>
+    </footer>
+    
+
+</body>
+</html>
