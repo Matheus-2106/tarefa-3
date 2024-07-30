@@ -77,3 +77,47 @@ body::before {
 body::after {
     right: 0;
 }
+
+/* Responsividade para tablets*/
+@media (max-width: 750px) {
+    body::before,
+    body::after {
+        width: 10%;
+    }
+
+    .converter {
+        padding: 1.5em;
+    }
+
+    label, input, select, button {
+        margin-bottom: 0.75em;
+    }
+
+    button {
+        padding: 0.75em;
+    }
+}
+
+/* Responsividade para celulares*/
+@media (max-width: 450px) {
+    body::before,
+    body::after {
+        display: none;
+    }
+
+    header, footer {
+        padding: 0.5em;
+    }
+
+    .converter {
+        padding: 1em;
+    }
+
+    label, input, select, button {
+        margin-bottom: 0.5em;
+    }
+
+    button {
+        padding: 0.5em;
+    }
+}
